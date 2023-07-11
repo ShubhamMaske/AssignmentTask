@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking A Slot</title>
+    <style>
+        button{
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Book a slot</h2>
+        <form id="my-form">
+            <label>Date:</label>
+            <input type="text" name="Date" id="slotDate" placeholder="Month/Date/Year" required>
+            <label>Start Time:</label>
+            <input type="text" name="start" id="startTime" placeholder="HH:MM" required>
+            <label>End Time:</label>
+            <input type="text" name="end" id="endTime" placeholder="HH:MM" required>
+            <button>Create Slot</button>
+        </form>
+    </div>
+
+    <br>
+    <button id="listSlots">Available Slots</button>
+    <ul id="slots">
+
+    </ul>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.4/axios.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
+    <script src="./slots.js"></script>
+</body>
+
+</html>
