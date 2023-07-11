@@ -17,7 +17,7 @@ app.use(bodyParser.json({ extended: false }));
 
 app.use('/slot',slotRoutes);
 
-db.sync({force:true})
+db.sync()
     .then(result => {
         app.listen(3000);
         console.log("Success");
